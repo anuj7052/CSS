@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multiple Triangles with Borders</title>
+<style>
+  .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin: 20px;
+  }
+
+  .triangle-up {
+    border-width: 0 50px 100px 50px;
+    border-color: transparent transparent blue transparent;
+  }
+
+  .triangle-down {
+    border-width: 100px 50px 0 50px;
+    border-color: blue transparent transparent transparent;
+  }
+
+  .triangle-left {
+    border-width: 50px 100px 50px 0;
+    border-color: transparent red transparent transparent;
+  }
+
+  .triangle-right {
+    border-width: 50px 0 50px 100px;
+    border-color: transparent transparent transparent red;
+  }
+
+  .border {
+    position: relative;
+    margin: 20px;
+  }
+</style>
+</head>
+<body>
+  <div class="border">
+    <div class="triangle triangle-up"></div>
+  </div>
+  <div class="border">
+    <div class="triangle triangle-down"></div>
+  </div>
+  <div class="border">
+    <div class="triangle triangle-left"></div>
+  </div>
+  <div class="border">
+    <div class="triangle triangle-right"></div>
+  </div>
+</body>
+</html>

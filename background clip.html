@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Clip</title>
+    <style>
+        .body1{
+            border: 10px dotted green;
+            padding: 20px;
+            height: 100px;
+            background: red;
+            background-clip: border-box;
+        }
+        .body2{
+            border: 10px dotted green;
+            padding: 20px;
+            height: 100px;
+            background: red;
+            background-clip: padding-box;
+        }
+        .body3{
+            border: 10px dotted green;
+            padding: 20px;
+            height: 100px;
+            background: red;
+            background-clip: content-box;
+        }
+        .body4{
+            border: 10px solid yellowgreen;
+           
+            height: 100px;
+            background: magenta;
+            background-clip: content-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="body1"><h1>border-box</h1></div>
+    <br><br>
+    <div class="body2"><h2>padding-box</h2></div>
+    <br><br>
+    <div class="body3"><h2>content-box</h2></div>
+    <br><br>
+    <div class="body4"><h3>Ankit</h3></div>
+    
+</body>
+</html>
